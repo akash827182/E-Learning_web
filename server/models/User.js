@@ -9,14 +9,14 @@ const Schema = new mongoose.Schema(
     email: {
       type: String,
       required: true,
-      unique,
+      unique: true,
     },
     password: {
       type: String,
       required: true,
     },
     role: {
-      type: "",
+      type: "String",
       default: "user",
     },
     subscription: [

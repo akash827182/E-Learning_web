@@ -5,6 +5,10 @@ import { connectDb } from "./database/db.js";
 dotenv.config();
 
 const app = express();
+
+// Using middlewares
+app.use(express.json());
+
 const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
